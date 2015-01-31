@@ -1,0 +1,11 @@
+# ipython notebook with django
+python manage.py shell_plus --notebook
+
+# run server
+python manage.py runserver
+
+# create DB schema
+python manage.py syncdb
+
+# run tests
+python manage.py test
