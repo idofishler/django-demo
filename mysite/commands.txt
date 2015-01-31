@@ -9,3 +9,9 @@ python manage.py syncdb
 
 # run tests
 python manage.py test
+
+# build as package
+python setup.py sdist
+
+# for nicer admin UI
+django_admin_bootstrapped
