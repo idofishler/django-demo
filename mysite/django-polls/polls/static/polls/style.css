@@ -1,0 +1,8 @@
+body {
+    background-image: url("images/background_pattern.png");
+ 	background-color: ffe9aa;
+}
+
+li a {
+    color: green;
+}
