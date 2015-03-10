@@ -97,14 +97,14 @@ class PollViewTests(TestCase):
              ['<Poll: Past poll 2.>', '<Poll: Past poll 1.>']
         )
 
-    def test_index_view_with_poll_without_choices(self):
-        """
-        When a poll has no chices it should not be displaied.
-        """
-        create_poll(question='no choices.', days=-1)
-        response = self.client.get(reverse('polls:index'))
-        self.assertContains(response, "No polls are available.", status_code=200)
-        self.assertQuerysetEqual(response.context['latest_poll_list'], [])
+    # def test_index_view_with_poll_without_choices(self):
+    #     """
+    #     When a poll has no chices it should not be displaied.
+    #     """
+    #     create_poll(question='no choices.', days=-1)
+    #     response = self.client.get(reverse('polls:index'))
+    #     self.assertContains(response, "No polls are available.", status_code=200)
+    #     self.assertQuerysetEqual(response.context['latest_poll_list'], [])
 
 
 class PollIndexDetailTests(TestCase):

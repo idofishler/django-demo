@@ -4,8 +4,8 @@ python manage.py shell_plus --notebook
 # run server
 python manage.py runserver
 
-# create DB schema
-python manage.py syncdb
+# create/migrate DB schema
+python manage.py migrate
 
 # run tests
 python manage.py test
@@ -15,3 +15,6 @@ python setup.py sdist
 
 # for nicer admin UI
 django_admin_bootstrapped
+
+# create first user
+python manage.py createsuperuser
